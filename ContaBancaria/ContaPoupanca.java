@@ -5,8 +5,8 @@ public class ContaPoupanca extends Conta{
 
     // Métodos
     // abrirConta não seria o construtor?
-    public ContaPoupanca(Integer id, String nome, String Endereco, Integer nrConta, Double saldo, Double txCorrecao) {
-        super(id, nome, Endereco, nrConta, saldo);
+    public ContaPoupanca(Pessoa cliente, Integer nrConta, Double saldo, Double txCorrecao) {
+        super(cliente, nrConta, saldo);
         this.txCorrecao = txCorrecao;
     }
 

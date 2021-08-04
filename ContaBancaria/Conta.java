@@ -9,8 +9,8 @@ public class Conta {
 
     // Métodos
     // abrirConta não seria o construtor?
-    public Conta(Integer id, String nome, String Endereco, Integer nrConta, Double saldo){
-        Pessoa cliente = new Pessoa(id, nome, Endereco);
+    public Conta(Pessoa cliente, Integer nrConta, Double saldo){
+        this.cliente = cliente;
         this.nrConta = nrConta;
         this.saldo = saldo;
     }

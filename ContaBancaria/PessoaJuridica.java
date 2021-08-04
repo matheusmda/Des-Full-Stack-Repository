@@ -1,21 +1,21 @@
 public class PessoaJuridica extends Pessoa{
 
     //Atributos
-    private Integer cnpj;
+    private String cnpj;
     private String atividade;
 
     //Métodos
-    public PessoaJuridica(Integer id, String nome, String Endereco, Integer cnpj, String atividade) {
+    public PessoaJuridica(Integer id, String nome, String Endereco, String cnpj, String atividade) {
         super(id, nome, Endereco);
         this.cnpj = cnpj;
         this.atividade = atividade;
     }
 
-    public Integer getCnpj(){
+    public String getCnpj(){
         return cnpj;
     }
 
-    public void setCnpj(Integer cnpj){
+    public void setCnpj(String cnpj){
         this.cnpj = cnpj;
     }
 

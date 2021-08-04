@@ -5,8 +5,8 @@ public class ContaEspecial extends Conta {
 
     // Métodos
     // abrirConta não seria o construtor?
-    public ContaEspecial(Integer id, String nome, String Endereco, Integer nrConta, Double saldo, Double limite) {
-        super(id, nome, Endereco, nrConta, saldo);
+    public ContaEspecial(Pessoa cliente, Integer nrConta, Double saldo, Double limite) {
+        super(cliente, nrConta, saldo);
         this.limite = limite;
     }
 

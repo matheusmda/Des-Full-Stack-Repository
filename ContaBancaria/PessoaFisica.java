@@ -3,23 +3,23 @@ import java.util.Calendar;
 public class PessoaFisica extends Pessoa{
 
     // Atributos
-    private Integer cpf;
+    private String cpf;
     private Calendar dtNascimento;
     private String genero;
 
     // Métodos
-    public PessoaFisica(Integer id, String nome, String Endereco, Integer cpf, Calendar dtNascimento, String genero) {
+    public PessoaFisica(Integer id, String nome, String Endereco, String cpf, Calendar dtNascimento, String genero) {
         super(id, nome, Endereco);
         this.cpf = cpf;
         this.dtNascimento = dtNascimento;
         this.genero = genero;
     }
 
-    public Integer getCpf(){
+    public String getCpf(){
         return cpf;
     }
 
-    public void setCpf(Integer cpf){
+    public void setCpf(String cpf){
         this.cpf = cpf;
     }
 
